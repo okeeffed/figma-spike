@@ -22,10 +22,6 @@ const main = async () => {
   const visitor = {
     COMPONENT: (node) => {
       console.log(node.type, node.name);
-
-      // if (node.name === 'ComponentB') {
-      //   console.log(node);
-      // }
     },
     INSTANCE: (node) => {
       console.log(node.type, node.name);
